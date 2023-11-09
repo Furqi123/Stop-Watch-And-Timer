@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+    rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<br><br><br>
+ <!-- Tabs navs -->
+ <div class="container-fluid">
+   <div class="nav-main">
+<ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="ex2-tab-1"
+        data-mdb-toggle="tab"
+        href="#ex2-tabs-1"
+        role="tab"
+        aria-controls="ex2-tabs-1"
+        aria-selected="true"
+        >Stop Watch</a
+      >
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex2-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex2-tabs-3"
+        role="tab"
+        aria-controls="ex2-tabs-3"
+        aria-selected="false"
+        >Timer</a
+      >
+    </li>
+  </ul>
+  <!-- Tabs navs -->
+  
+  <!-- Tabs content -->
+  <div class="tab-content" id="ex2-content">
+    <div
+      class="tab-pane fade show active"
+      id="ex2-tabs-1"
+      role="tabpanel"
+      aria-labelledby="ex2-tab-1" >
+
+
+   
+      <div class="main">
+        <br><br>
+        
+          <h1 id="min">0</h1>
+          <h1>:</h1>
+          <h1 id="sec">0</h1>
+          <h1>:</h1>
+          <h1 id="milli-sec">0</h1>
+          </div>
+       
+   
+  
+      <div class="main-buton">
+          <button type="button" class="btn btn-primary" id="start" onclick="start()">Start</button>
+          <button type="button" class="btn btn-primary" onclick="stop()">Stop</button>
+          <button type="button" class="btn btn-primary"  onclick="reset()">Reset</button>
+
+      </div>
+ 
+
+
+
+
+    </div>
+ 
+    <div
+      class="tab-pane fade"
+      id="ex2-tabs-3"
+      role="tabpanel"
+      aria-labelledby="ex2-tab-3">
+
+
+      
+      <div class="inputData">
+        <div class="input-body">
+         <input type="text" name="" id="inpSec" placeholder="00">
+          <p>:</p>
+         <input type="text" name="" id="inpMin" placeholder="00 ">
+         <p>:</p>
+         <input type="text" name="" id="inpHour" placeholder="00"> </br><br>
+        </div>
+         <div class="btn2">
+          <button type="button" class="btn btn-primary"  onclick="timerStart()">Start</button>
+         </div>
+         </div>
+        <br>
+        
+        
+         <div style="display: none;"  id="timer">
+        
+           <h1 id="outTimeHour">00</h1>
+           <b>:</b>
+           <h1 id="outTimeMin">00</h1>
+          <b>:</b>
+          <h1 id="outTimeSec">00</h1>
+        
+         </div>
+        
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Tabs content -->
+ 
+  
+
+    
+  
+
+ 
+
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+    <script src="app.js"></script>
+</body>
+</html>
